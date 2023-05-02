@@ -19,6 +19,7 @@ fn main() {
         })
         .invoke_handler(tauri::generate_handler![
             handler::message_box,
+            handler::get_logon_logoff_log,
             greet,
         ])
         .run(tauri::generate_context!())

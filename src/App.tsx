@@ -10,8 +10,16 @@ function App() {
   async function greet() {
     // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
     //setGreetMsg(await invoke("greet", { name }));
-    let msg = name;
-    setGreetMsg(await invoke("message_box", { msg }));
+    //let msg = name;
+    //setGreetMsg(await invoke("message_box", { msg }));
+    let size = 100;
+    let msg = "";
+    const logs = await invoke<Array<string>>("get_logon_logoff_log", { size });
+    for (let i = 0; i < logs.length; i++) {
+      msg += logs[i];
+      msg += "\r\n";
+    }
+    setGreetMsg(msg);
   }
 
   return (
