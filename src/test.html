@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <script type="module" src="test.js" defer></script>
+    <style>
+      .logo.vanilla:hover {
+        filter: drop-shadow(0 0 2em #ffe21c);
+      }
+    </style>
+  </head>
+
+  <body>
+    <button id="debug-button">Debug</button>
+    <div id="log_disp">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Message</th>
+            <th>DateTime</th>
+          </tr>
+        </thead>
+        <tbody id="log_body">
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,6 +1,6 @@
-# Tauri + React + Typescript
+# Tauri + Vanilla
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
+This template should help get you started developing with Tauri in vanilla HTML, CSS and Javascript.
 
 ## Recommended IDE Setup
 
